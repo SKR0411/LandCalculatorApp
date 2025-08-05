@@ -20,14 +20,14 @@
     "android.permission.ACCESS_NETWORK_STATE"
   ],
   "icons": [
-    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/ic_icon_round.png",
-    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/home_screen.jpg"
+    "https://raw.githubusercontent.com/SKR0411/LandCalculator/main/land_calculator/assets/ic_icon_round.png",
+    "https://raw.githubusercontent.com/SKR0411/LandCalculator/main/land_calculator/assets/ic_icon.jpg"
   ],
   "screenshots": [
-    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/welcome_screen.jpg",
-    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/home_screen.jpg",
-    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/result_screen.jpg",
-    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/history_screen.jpg"
+    "https://raw.githubusercontent.com/SKR0411/LandCalculator/main/land_calculator/assets/welcome_screen.jpg",
+    "https://raw.githubusercontent.com/SKR0411/LandCalculator/main/land_calculator/assets/home_screen.jpg",
+    "https://raw.githubusercontent.com/SKR0411/LandCalculator/main/land_calculator/assets/result_screen.jpg",
+    "https://raw.githubusercontent.com/SKR0411/LandCalculator/main/land_calculator/assets/history_screen.jpg"
   ],
   "apk": {
     "url": "https://github.com/SKR0411/LandCalculator/releases/download/v1.0/land_calculator.apk",
