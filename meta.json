@@ -1,0 +1,40 @@
+{
+  "name": "Land Calculator",
+  "package": "com.skr.landcalculator",
+  "version": "1.0",
+  "description": "Land Calculator is a utility app that allows users to calculate land area using various units and measurement methods. It supports multiple input methods and visual feedback for accuracy.",
+  "developer": {
+    "name": "SKR",
+    "email": "skr@example.com",
+    "website": "https://github.com/SKR0411"
+  },
+  "features": [
+    "Support for different land measurement units (e.g. square feet, acres, bigha)",
+    "Multiple calculation modes",
+    "History and saved records",
+    "Simple and clean UI",
+    "Works offline"
+  ],
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE"
+  ],
+  "icons": [
+    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/ic_icon_round.png",
+    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/home_screen.jpg"
+  ],
+  "screenshots": [
+    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/welcome_screen.jpg",
+    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/home_screen.jpg",
+    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/result_screen.jpg",
+    "https://raw.githubusercontent.com/SKR0411/AppHub/main/land_calculator/assets/history_screen.jpg"
+  ],
+  "apk": {
+    "url": "https://github.com/SKR0411/LandCalculator/releases/download/v1.0/land_calculator.apk",
+    "size": "4.5 MB",
+    "minSdk": 16,
+    "targetSdk": 30
+  },
+  "tags": ["land", "area", "calculator", "offline", "bigha", "acre", "unit conversion"],
+  "releaseDate": "2025-07-30"
+}
