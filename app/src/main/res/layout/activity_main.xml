@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+        android:orientation="vertical"
+		android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length"
+            android:textColor="#000"
+            android:textSize="25sp"
+		/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+			android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+				android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/etLength1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Enter length"
+					android:text="0"
+                    android:inputType="numberDecimal"
+				/>
+
+                <Spinner
+                    android:id="@+id/spinnerLengthUnit1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+				/>
+					
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+				android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/etLength2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Enter length"
+					android:text="0"
+                    android:inputType="numberDecimal"
+				/>
+
+                <Spinner
+                    android:id="@+id/spinnerLengthUnit2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+				/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breadth"
+            android:textColor="#000"
+            android:textSize="25sp"
+		/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+			android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+				android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/etBreadth1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Enter breadth"
+					android:text="0"
+                    android:inputType="numberDecimal"
+					 
+				/>
+
+                <Spinner
+                    android:id="@+id/spinnerBreadthUnit1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+				/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+				android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/etBreadth2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Enter breadth"
+					android:text="0"
+                    android:inputType="numberDecimal"
+				/>
+
+                <Spinner
+                    android:id="@+id/spinnerBreadthUnit2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+				/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF6200EE"
+            android:text="Calculate Area"
+            android:textColor="#FFFFFF"
+		/>
+		
+		<Spinner
+			android:id="@+id/spinnerAreaUnit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#EEEEEE"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"
+		/>
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Amount"
+            android:textColor="#000"
+            android:textSize="25sp"
+		/>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+			android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+				android:padding="10dp">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:text="Multiplier"
+					android:textColor="#000"
+					android:textSize="20sp"
+				/>
+
+                <EditText
+                    android:id="@+id/etTimes"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Times"
+					android:text="1"
+                    android:inputType="numberDecimal"
+				/>
+				
+				<Spinner
+					android:id="@+id/spinnerMultiplier"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="7dp"
+				/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+				android:padding="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:text="Enter Price"
+					android:textColor="#000"
+					android:textSize="20sp"
+				/>
+				
+                <EditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Enter Price"
+					android:text="0"
+                    android:inputType="numberDecimal"
+				/>
+				
+				<Spinner
+					android:id="@+id/spinnerPricePerUnit"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="7dp"
+				/>
+				
+            </LinearLayout>
+        </LinearLayout>
+		
+        <Button
+            android:id="@+id/btnCalculateAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF6200EE"
+            android:text="Calculate Amount and Price"
+            android:textColor="#FFFFFF"
+		/>
+
+        <TextView
+            android:id="@+id/tvResultAmount"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="#EEEEEE"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"
+		/>
+		
+		<Button
+			android:id="@+id/btnClear"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FFEE0055"
+			android:text="Clear All"
+			android:textColor="#FFFFFF"
+			android:layout_marginTop="10dp"
+		/>
+		
+    </LinearLayout>
+</ScrollView>
