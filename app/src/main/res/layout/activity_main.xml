@@ -10,7 +10,28 @@
         android:layout_height="wrap_content"
 		android:gravity="center_horizontal"
         android:orientation="vertical"
+		android:padding="15dp"
 		android:layout_marginTop="10dp">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Result"
+			android:textColor="#000"
+			android:textSize="25sp"
+		/>
+		
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#EEEEEE"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"
+		/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,13 +54,12 @@
 				android:padding="10dp" >
 
                 <EditText
-                    android:id="@+id/etLength1"
+                    android:id="@+id/edtLength1"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/edit_text"
                     android:hint="Enter length"
-					android:text="0"
-                    android:inputType="numberDecimal"
+					android:inputType="numberDecimal"
 				/>
 
                 <Spinner
@@ -54,17 +74,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-				android:padding="10dp">
+				android:orientation="vertical"
+                android:padding="10dp">
 
                 <EditText
-                    android:id="@+id/etLength2"
+                    android:id="@+id/edtLength2"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/edit_text"
                     android:hint="Enter length"
-					android:text="0"
-                    android:inputType="numberDecimal"
+                	android:inputType="numberDecimal"
 				/>
 
                 <Spinner
@@ -97,13 +116,12 @@
 				android:padding="10dp">
 
                 <EditText
-                    android:id="@+id/etBreadth1"
+                    android:id="@+id/edtBreadth1"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/edit_text"
                     android:hint="Enter breadth"
-					android:text="0"
-                    android:inputType="numberDecimal"
+					android:inputType="numberDecimal"
 					 
 				/>
 
@@ -122,13 +140,12 @@
 				android:padding="10dp">
 
                 <EditText
-                    android:id="@+id/etBreadth2"
+                    android:id="@+id/edtBreadth2"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/edit_text"
                     android:hint="Enter breadth"
-					android:text="0"
-                    android:inputType="numberDecimal"
+					android:inputType="numberDecimal"
 				/>
 
                 <Spinner
@@ -139,37 +156,10 @@
 				/>
             </LinearLayout>
         </LinearLayout>
-
-        <Button
-            android:id="@+id/btnCalculate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FF6200EE"
-            android:text="Calculate Area"
-            android:textColor="#FFFFFF"
-		/>
-		
-		<Spinner
-			android:id="@+id/spinnerAreaUnit"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-		/>
-
-        <TextView
-            android:id="@+id/tvResult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="#EEEEEE"
-            android:padding="10dp"
-            android:textColor="#333333"
-            android:textSize="20sp"
-		/>
 		
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:text="Amount"
             android:textColor="#000"
             android:textSize="25sp"
@@ -187,27 +177,17 @@
                 android:orientation="vertical"
 				android:padding="10dp">
 				
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="10dp"
-					android:text="Multiplier"
-					android:textColor="#000"
-					android:textSize="20sp"
-				/>
-
-                <EditText
-                    android:id="@+id/etTimes"
+			    <EditText
+                    android:id="@+id/edtOperator"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/edit_text"
-                    android:hint="Times"
-					android:text="1"
-                    android:inputType="numberDecimal"
+                    android:hint="Operator"
+					android:inputType="numberDecimal"
 				/>
 				
 				<Spinner
-					android:id="@+id/spinnerMultiplier"
+					android:id="@+id/spinnerOperator"
 					android:layout_width="150dp"
 					android:layout_height="wrap_content"
 					android:layout_marginBottom="7dp"
@@ -220,27 +200,17 @@
                 android:orientation="vertical"
 				android:padding="10dp">
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="10dp"
-					android:text="Enter Price"
-					android:textColor="#000"
-					android:textSize="20sp"
-				/>
-				
-                <EditText
-                    android:id="@+id/etPrice"
+			    <EditText
+                    android:id="@+id/edtPrice"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/edit_text"
-                    android:hint="Enter Price"
-					android:text="0"
-                    android:inputType="numberDecimal"
+                    android:hint="Rate"
+					android:inputType="numberDecimal"
 				/>
 				
 				<Spinner
-					android:id="@+id/spinnerPricePerUnit"
+					android:id="@+id/spinnerAreaUnitForPrice"
 					android:layout_width="150dp"
 					android:layout_height="wrap_content"
 					android:layout_marginBottom="7dp"
@@ -253,31 +223,45 @@
             android:id="@+id/btnCalculateAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF6200EE"
-            android:text="Calculate Amount and Price"
+            android:backgroundTint="#FF6200EE"
+            android:text="Calculate"
             android:textColor="#FFFFFF"
 		/>
-
-        <TextView
-            android:id="@+id/tvResultAmount"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="15dp"
-            android:background="#EEEEEE"
-            android:padding="10dp"
-            android:textColor="#333333"
-            android:textSize="20sp"
+		
+		<Spinner
+			android:id="@+id/spinnerAreaUnit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
 		/>
 		
-		<Button
-			android:id="@+id/btnClear"
+		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#FFEE0055"
-			android:text="Clear All"
-			android:textColor="#FFFFFF"
-			android:layout_marginTop="10dp"
-		/>
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp" >
+			
+			<Button
+				android:id="@+id/btnClear"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:backgroundTint="#FFEE0055"
+				android:text="Clear All"
+				android:textColor="#FFFFFF"
+				android:layout_weight="1"
+				android:layout_marginRight="5dp" />
+		
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="History"
+				android:textColor="#FFFFFF"
+				android:backgroundTint="#697"
+				android:layout_weight="1"
+				android:layout_marginLeft="5dp"
+				android:id="@+id/btnHistory" />
+		
+		</LinearLayout>
 		
     </LinearLayout>
+	
 </ScrollView>
